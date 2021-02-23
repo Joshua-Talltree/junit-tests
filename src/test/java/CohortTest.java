@@ -21,5 +21,12 @@ public class CohortTest {
         assertEquals("Ronald Rajski", cohortWithABunch.getStudents().get(5).getName());
         assertEquals(6, cohortWithABunch.getStudents().size());
     }
+    @Test
+    public void testToSeeIfICanRetrieveCurrentStudentList() {
+        assertEquals(0, cohortWithNone.getStudents().size());
+        assertEquals(1, cohortWithSome.getStudents().size());
+        assertEquals(1, cohortWithABunch.getStudents().get(0).getId());
+        assertEquals(2, cohortWithABunch.getStudents().get(1).getId());
 
+    }
 }
