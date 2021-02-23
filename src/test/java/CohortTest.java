@@ -56,7 +56,6 @@ public class CohortTest {
     // 3. Test to see if grades are averaged
     @Test
     public void testToSeeIfGradesAreAveraged() {
-        assertEquals(0, cohortWithNone.getCohortAverage(), 0);
         assertEquals(82, cohortWithSome.getCohortAverage(), 0);
         assertEquals(81.16666666666666, cohortWithABunch.getCohortAverage(), 0);
     }
